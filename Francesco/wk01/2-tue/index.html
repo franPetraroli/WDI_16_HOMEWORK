@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p>Please open th econsole</p>
+
+  <button onclick="fortune()">Fortune telling button</button>
+  <p id="result"></p>
+
+  <br>
+
+
+  <input type="text" placeholder="your year" id="year"><button onclick="calculate()">Calculate your age</button>
+  <br>
+  <p id="result2"></p>
+
+  <p>How many pancakes do you need until the rest of your life?</p>
+  <button onclick="howMany()">How many?</button>
+  <p id="result3"></p>
+
+  <h3>For loop</h3>
+  <button onclick="go()">Go</button>
+  <ul id="forloop">
+  </ul>
+  
+  <h3>Calculator X 9</h3>
+  <button onclick="calc()">Calculate</button>
+
+  <h3>My Favourite</h3>
+  <button onclick="show()">show</button>
+
+  <h3>Guessed the number</h3>
+  <label for="max">Enter max number</label>
+  <input type="text" name="max" placeholder="max number" id="max" required>
+  <input type="text" placeholder="enter a number" id="input">
+  <button onclick="guess()">Guess</button>
+  <p id="guessresult"></p>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
