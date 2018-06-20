@@ -19,13 +19,7 @@ if(year === 2018){
 //   case (year > 2018):
 //     console.log("Greetings from the future!")
 //     break;
-// }
-
-var button = document.getElementById('submit').addEventListener('click', function(e){
-  var input = document.getElementById('age').value
-  console.log(input);
-  e.preventDefault()
-})
+// } 
 
 var children, partner, geo, job;
 
@@ -88,14 +82,14 @@ function show() {
   })
 }
 
-let max = document.getElementById('max').value.toString()
-var random = Math.floor(Math.random() * max)
+// let max = document.getElementById('max').value.toString()
+// var random = Math.floor(Math.random() * max)
 
 function guess() {
   let userInput = document.getElementById('input').value
-  // let max = document.getElementById('max').value.toString()
+  let max = document.getElementById('max').value.toString()
 
-  // let random = Math.floor(Math.random() * max)
+  let random = Math.floor(Math.random() * max)
 
   console.log(random);
 
