@@ -1,47 +1,57 @@
-var yearStart = 1918;
-const startDate = new Date(yearStart,1,1);
-const month = startDate.getMonth() + 1;
-function result(year){
-  return new Date(year, month, 0).getDate();
+let recipe = {
+  title: 'Pancakes',
+  serving: 4,
+  ingredients: ['flour', 'sugar', 'eggs', 'butter',' vanilla essence']
 }
 
-console.log('Leap years');
-
-for(yearStart; yearStart < 2019; yearStart++){
-  let final = result(yearStart)
-  if(final === 29){
-    console.log(yearStart); 
-  } 
-}
+console.log(recipe.title);
+console.log(recipe.serving);
+console.log(recipe.ingredients[0]);
+console.log(recipe.ingredients[1]);
+console.log(recipe.ingredients[2]);
+console.log(recipe.ingredients[4]);
 
 
-console.log('Multiple of 7');
+let books = [{
+  title: 'Pet semetery',
+  author: 'Stephen King',
+  alreadyRead: true
+},{
+  title: 'The Alchemist',
+  author: 'Paulo Coelho',
+  alreadyRead: true
+},{
+  title: 'Tools of Titans',
+  author: 'Tim Ferries',
+  alreadyRead: false
+},{
+  title: 'Odd Thomas',
+  author: 'Dean Kontz',
+  alreadyRead: true
+}]
 
-for(let i = 1; i < 201; i++){  
-  if(i % 7 === 0){
-    console.log(i); 
-  }
-   
-
-  //Using the same loop
-
-  
-  // if(i === start){
-  //   console.log(i);
-  //   start+=4
+books.forEach((book)=>{
+  console.log(book.title);
+  console.log(book.author);
+  if(book.alreadyRead){
+    console.log(`You have already read this book`);
+  }else{
+    console.log('You have not read yet this book');
     
-  // }
-}
+  }
+})
 
-console.log('Second odds number');
+var favMovie = {
+  title: 'Inception',
+  duration: '220 min',
+  stars: ['Leo Di Caprio', 'star2', 'star3']
+};
 
-let start = 3; 
-for(let i = 3; i < 201; i+=4){
-  console.log(i);
-  
-}
+(function(){
+  console.log(`${favMovie.title} lasts for ${favMovie.duration}. Stars: ${favMovie.stars[0]}, ${favMovie.stars[1]}, ${favMovie.stars[1]}.`);
+})()
 
+// movie()
 
-
-
+// console.log(favMovie.stars[0]);
 
