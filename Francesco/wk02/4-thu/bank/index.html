@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div id="logo">LOGO</div>
+    <div id="title">ONLINE BANKING</div>
+  </header>
+
+  <div id="alert"></div>
+
+  <main id="container">
+
+    <div id="card1" class="card">
+      <h2>SAVINGS</h2>
+      <p>YOUR BALANCE IS</p>
+      <h1>$
+        <span id="saving-balance">00.00</span>
+      </h1>
+      <input type="number" id="saving-input" placeholder="ENTER AMOUNT HERE" required>
+      <button id="btn-saving-withdraw">WITHDRAW</button>
+      <button id="btn-saving-deposit">DEPOSIT</button>
+    </div>
+
+    <div id="card2" class="card">
+      <h2>CHECKING</h2>
+      <p>YOUR BALANCE IS</p>
+      <h1>$
+        <span id="check-balance">00.00</span>
+      </h1>
+      <input type="number" id="checking-input" placeholder="ENTER AMOUNT HERE" required>
+      <button id="btn-checking-withdraw">CHECKING</button>
+      <button id="btn-checking-deposit">DEPOSIT</button>
+    </div>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
