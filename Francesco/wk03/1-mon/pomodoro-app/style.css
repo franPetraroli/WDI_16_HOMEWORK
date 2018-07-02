@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  width: 506px;
+  height: 26px;
+  background-color: #bbb;
+  border-radius: 13px;
+  padding: 3px;
+  margin: 50px auto;
+}
+
+#progress {
+  width: 0px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ff554f;
+}
