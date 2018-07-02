@@ -4,10 +4,10 @@ var timer = {
   pause: document.querySelector("#pause"),
 
   title: document.querySelector("#timer"),
-  test: null,
+  intervall: null,
   seconds: 0,
   timerId: () => {
-    test = setInterval(timer.updateTime, 1000);
+    intervall = setInterval(timer.updateTime, 1000);
   },
   updateTime: () => {
     timer.seconds++;
@@ -15,7 +15,7 @@ var timer = {
   },
   event: document.addEventListener("click", e => {
     if (e.target.id === "reset") {
-      clearInterval(this.test);
+      clearInterval(this.intervall);
       timer.seconds = 0;
       timer.title.textContent = "Stop Watch";
       console.log("reset");
@@ -25,7 +25,7 @@ var timer = {
       console.log("start");
     }
     if (e.target.id === "pause") {
-      clearInterval(this.test);
+      clearInterval(this.intervall);
       console.log("pause");
     }
   })
