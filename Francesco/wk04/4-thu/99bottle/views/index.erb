@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <% if @bottles != 0 %>
+      <h1><%= @bottles %> Bottles of beer on the wall</h1>
+      <a href="/<%= @bottles.to_i - 1 %>">Take one down</a>
+    <% else %>
+      <h1 class="blink_me">No Bottles of beer on the wall</h1>
+      <a href="/">Start again</a>
+    <% end %>
+  </div>
+</body>
+</html>
