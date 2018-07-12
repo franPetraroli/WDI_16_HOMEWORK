@@ -10,12 +10,12 @@
 </head>
 <body>
   <div class="container">
-    <% if @bottles != 0 %>
-      <h1><%= @bottles %> Bottles of beer on the wall</h1>
-      <a href="/<%= @bottles.to_i - 1 %>">Take one down</a>
-    <% else %>
+    <% if @bottles == 0 %>
       <h1 class="blink_me">No Bottles of beer on the wall</h1>
       <a href="/">Start again</a>
+    <% else %>
+      <h1><%= @bottles %> Bottles of beer on the wall</h1>
+      <a href="/<%= @bottles.to_i - 1 %>">Take one down</a>
     <% end %>
   </div>
 </body>
