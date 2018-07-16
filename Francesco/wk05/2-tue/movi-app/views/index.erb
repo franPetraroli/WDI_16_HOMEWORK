@@ -1,0 +1,17 @@
+<div class="row">
+<% if @result["Error"] %>
+  <h1>Cannot find any result, try a different search.</h1>
+<% else %>
+  <% @result["Search"].each do |movie| %>
+    <div class="card col-md-2" style="width: 18rem;">
+      <img class="card-img-top" src="<%= movie['Poster'] %>" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= movie["Title"] %></h5>
+        <p class="card-text"><%= movie["Year"] %></p>
+        <a href="result?title=<%=movie["Title"]%>" class="btn btn-primary">More Details</a>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+</div>
+
