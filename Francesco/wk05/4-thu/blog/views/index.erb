@@ -1,0 +1,13 @@
+<div class="row">
+  <% @result.each do |item| %>
+    <div class="col-md-4">
+      <h1><%= item.title %></h1>
+      <p><%= item.plot %></p>
+      <img src="<%= item.image_url %>" alt="" heigth="200px" width="200px">
+      <p><%= item.author %></p>
+      <a href="/post/<%= item.id %>">SEE more</a>
+    </div>
+
+  <% end %>
+</div>
+
