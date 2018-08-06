@@ -1,0 +1,22 @@
+main{
+  margin-top: 50px;
+  height: 815px;
+  width: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box{
+  border: 1px solid rgba(237, 233, 233, 0.5);
+  height: 20px;
+  width: 20px;
+  float: right;
+  overflow:auto;
+}
+#brush{
+  border: 1px solid black;
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  float: right;
+}
